@@ -1,4 +1,4 @@
-native-styleguide
+styleguide-template
 =================
 
-Style guidelines for Nativeyewear.com.
+A starter template for styleguides.
