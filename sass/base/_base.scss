@@ -1,0 +1,68 @@
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    color: $secondary-color;
+    font-size: 1em;
+    line-height: $baseline;
+}
+
+
+/* =============================================================================
+   Links
+   ============================================================================ */
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    cursor: pointer;
+}
+
+a:visited {
+    color: $primary-color;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: $primary-color;
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: $primary-color;
+    color: #fff;
+    text-shadow: none;
+}
+
+
+/* =============================================================================
+   Stabilize padding for Fliud Grid
+================================================================================ */
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+
+/* =============================================================================
+  Fluid Images
+================================================================================ */
+
+img {
+  max-width: 100%;
+  height: 0 auto !important;
+}

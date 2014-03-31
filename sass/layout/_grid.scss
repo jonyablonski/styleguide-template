@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Grid
+   ========================================================================== */
+
+.row {
+  @extend %clearfix;
+  list-style: none;
+}
+
+[class*='grid'] {
+  width: 100%;
+  margin: 0 0 $baseline;
+  padding: 0 $baseline;
+  @include breakpoint(charlie) {
+    float: left;
+  }
+}
+
+.grid_1-12 {
+  width: 100%;
+}
+
+.grid_2-12 {
+  width: 50%
+  @include breakpoint(charlie) {
+    width: 16.6666666667%;
+  }
+}
+
+.grid_3-12 {
+  @include breakpoint(charlie) {
+    width: 25%;
+  }
+}
+
+.grid_4-12 {
+  @include breakpoint(charlie) {
+    width: 33.3333%;
+  }
+
+}
+
+.grid_5-12 {
+  @include breakpoint(charlie) {
+    width: 41.666666666%;
+  }
+}
+
+.grid_6-12 {
+  @include breakpoint(charlie) {
+    width: 50%;
+  }
+}
+
+.grid_7-12 {
+  @include breakpoint(charlie) {
+    width: 58.333333333%;
+  }
+}
+
+
+.grid_8-12 {
+  @include breakpoint(charlie) {
+    width: 66.6666%;
+  }
+}
+
+.grid_9-12 {
+  @include breakpoint(charlie) {
+    width: 75%;
+  }
+}

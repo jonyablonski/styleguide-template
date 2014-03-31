@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+$primary-color: teal;
+$secondary-color: #333;
+$grey: #ccc;
+$light-grey: #eee;
+
+
+/* ==========================================================================
+   Baseline
+   ========================================================================== */
+
+$baseline: 1.4em;
+
+
+
+/* ==========================================================================
+   Breakpoints
+   ========================================================================== */
+
+@mixin breakpoint($point) {
+
+  @if $point == alpha {
+    @media only screen and (min-width: 30em) { @content; } /* 480/16 */
+  }
+
+  @if $point == bravo {
+    @media only screen and (min-width: 40em) { @content; }
+  }
+
+  @else if $point == charlie {
+    @media only screen and (min-width: 48em) { @content; } /* 768/16 */
+  }
+
+  @else if $point == delta {
+    @media only screen and (min-width: 64em) { @content; } /* 1024/16 */
+  }
+
+  @else if $point == epsilon {
+    @media only screen and (min-width: 71.25em) { @content; } /* 1280/16 */
+  }
+
+}

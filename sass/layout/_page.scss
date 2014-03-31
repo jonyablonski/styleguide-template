@@ -1,0 +1,124 @@
+/* =============================================================================
+   General Content Styling
+   ========================================================================== */
+
+.container {
+  position: relative;
+  width: 92%;
+  margin: 0 auto $baseline;
+  max-width: 1024px;
+}
+
+.page-header,
+.page-nav,
+.page-components {
+  @extend %clearfix;
+}
+
+
+/* =============================================================================
+   Header Styles
+   ========================================================================== */
+
+.page-header {
+  display: block;
+  padding: $baseline/2;
+  margin: 0 0 $baseline;
+  width: 100%;
+  height: 70px;
+  background: $secondary-color;
+  color: #fff;
+}
+
+.page-header__logo,
+.page-header__meta {
+  margin: 0;
+  line-height: 70px;
+}
+
+.page-header__logo {
+  float: left;
+}
+
+.page-header__meta {
+  float: right;
+}
+
+
+/* =============================================================================
+   Page Navigation
+   ============================================================================ */
+
+.page-nav {
+  float: left;
+  width: 100%;
+  margin: 0 0 $baseline;
+  margin: 0 0 $baseline;
+  background: $light-grey;
+  border-top: 4px solid $primary-color;
+  border-bottom-left-radius: .3em;
+  border-bottom-right-radius: .3em;
+
+  a {
+    display: block;
+    padding: $baseline;
+    font-size: .825em;
+    color: $primary-color;
+    border-bottom: 1px solid $grey;
+    transition: background .2s ease-in-out;
+
+    &:last-child {
+       border-bottom: none;
+    }
+
+    &:hover {
+      background: rgba(0,0,0,.05);
+    }
+
+  }
+
+  &.is-fixed {
+    position: fixed;
+    top: 24px;
+  }
+
+  @include breakpoint(charlie) {
+      position: absolute;
+      display: block;
+      width: 250px;
+      float: left;
+  }
+
+}
+
+
+/* =============================================================================
+   Page  Components
+   ============================================================================ */
+
+.page-components {
+
+  @include breakpoint(charlie) {
+    padding-left: 2em;
+    margin-left: 250px;
+  }
+
+}
+
+.page-components__section {
+  margin: 0 0 $baseline;
+}
+
+.page-components__header,
+.page-components__body {
+  margin: 0 0 $baseline/2;
+}
+
+.page-components__header {
+  padding: 0 0 $baseline/2;
+  border-bottom: 1px solid $grey;
+}
+
+.page-components__body {
+  font-size: .825em;
+}
